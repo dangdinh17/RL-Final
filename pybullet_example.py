@@ -272,7 +272,6 @@ def main():
     init_table_uid = p.loadURDF(os.path.join(pb_data_path, "table/table.urdf"), basePosition=[0.45, -0.1, -0.65])
     # Load the initial tray for holding objects
     initial_tray_uid = p.loadURDF(os.path.join(project_path , "urdf/tray/traybox.urdf"), basePosition=[0.5, 0.1, 0])
-
     # Load the new trays for sorting objects
     new_tray_positions = [[0.2, -0.4, 0], [0.5, -0.4, 0], [0.8, -0.4, 0]]  # Positions for new trays
     new_tray_colors = ["red", "green", "blue"]
