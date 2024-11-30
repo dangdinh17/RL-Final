@@ -268,8 +268,8 @@ def main():
     print(pb_data_path)
     project_path = os.path.dirname(os.path.abspath(__file__))
 
-    robot_uid = p.loadURDF(os.path.join(project_path, "urdf/ur5_rg2.urdf"), useFixedBase=True)
-    init_table_uid = p.loadURDF(os.path.join(pb_data_path, "table/table.urdf"), basePosition=[0.45, -0.1, -0.65])
+    robot_uid = p.loadURDF(os.path.join(project_path, "urdf/robot/ur5_rg2.urdf"), useFixedBase=True)
+    init_table_uid = p.loadURDF(os.path.join(project_path, "urdf/table/table.urdf"), basePosition=[0.45, -0.1, -0.65])
     # Load the initial tray for holding objects
     initial_tray_uid = p.loadURDF(os.path.join(project_path , "urdf/tray/traybox.urdf"), basePosition=[0.5, 0.1, 0])
     # Load the new trays for sorting objects
